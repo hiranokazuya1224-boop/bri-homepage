@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRIコミュニティー｜東京都内のマンション管理（管理組合運営・建物管理・組合会計）</title>
+<meta name="description" content="株式会社BRIコミュニティーは、東京都内を中心にマンションの管理組合運営・建物の維持管理・組合会計をトータルにサポートするマンション管理会社です。管理会社の変更もお気軽にご相談ください。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<!-- アイコン集 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-logo" viewBox="0 0 40 40"><path d="M6 8h16l-4 7H6z" fill="currentColor"/><path d="M6 18h20l-4 7H6z" fill="currentColor" opacity=".75"/><path d="M6 28h24l-4 7H6z" fill="currentColor" opacity=".5"/></symbol>
+  <symbol id="i-people" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M6 38c0-7 5-12 11-12s11 5 11 12"/><path d="M28 28c1.5-1.5 3-2 5-2 5 0 9 4 9 10"/></symbol>
+  <symbol id="i-building" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 42V8h20v34"/><path d="M30 18h8v24"/><path d="M6 42h36"/><path d="M16 14h2M22 14h2M16 21h2M22 21h2M16 28h2M22 28h2"/><path d="M18 42v-6h4v6"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="6" width="26" height="36" rx="3"/><rect x="16" y="11" width="16" height="7"/><path d="M17 25h2M24 25h2M31 25h0M17 31h2M24 31h2M17 37h2M24 37h2M31 31v6"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h17l9 9v27H12z"/><path d="M29 6v9h9"/><path d="M18 24h14M18 30h14M18 36h9"/></symbol>
+  <symbol id="i-group" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="12" r="6"/><circle cx="11" cy="34" r="6"/><circle cx="37" cy="34" r="6"/><path d="M20 17l-6 12M28 17l6 12M17 34h14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 43s13-12 13-23a13 13 0 1 0-26 0c0 11 13 23 13 23z"/><circle cx="24" cy="20" r="5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 6v11c0 10-6.5 17-15 21C15.5 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42h36"/><path d="M12 36V26M21 36V18M30 36V22M39 36V10"/><path d="M10 18l10-8 9 5 11-9"/></symbol>
+  <symbol id="i-key" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="30" r="9"/><path d="M22 24L40 6M34 12l5 5M29 17l4 4"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26l8-8 8 3 6-4 8 1 10 8"/><path d="M12 18l11 12c1.5 1.5 4 1.5 5 0s0-3-1-4"/><path d="M20 32l4 4c1.5 1.5 4 1 4-1M16 34l3 3M34 19l-7 8"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+  <!-- スライド背景用の街並みイラスト -->
+  <symbol id="city" viewBox="0 0 1440 560" preserveAspectRatio="xMaxYMax slice">
+    <defs>
+      <pattern id="win" width="22" height="26" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="12" height="15" fill="#ffffff" opacity=".55"/></pattern>
+      <pattern id="win2" width="18" height="22" patternUnits="userSpaceOnUse"><rect x="3" y="4" width="10" height="12" fill="#ffffff" opacity=".4"/></pattern>
+    </defs>
+    <circle cx="1240" cy="110" r="70" fill="#fff" opacity=".18"/>
+    <rect x="700" y="250" width="120" height="310" fill="#ffffff" opacity=".18"/>
+    <rect x="1290" y="210" width="150" height="350" fill="#ffffff" opacity=".2"/>
+    <rect x="1290" y="210" width="150" height="350" fill="url(#win2)"/>
+    <g>
+      <rect x="880" y="90" width="230" height="470" fill="#e9f1fa"/>
+      <rect x="880" y="90" width="230" height="470" fill="url(#win)" opacity=".9"/>
+      <rect x="880" y="90" width="230" height="470" fill="#1d4e86" opacity=".35"/>
+      <rect x="870" y="80" width="250" height="14" fill="#ffffff" opacity=".9"/>
+      <g fill="#ffffff" opacity=".85"><rect x="880" y="140" width="230" height="4"/><rect x="880" y="218" width="230" height="4"/><rect x="880" y="296" width="230" height="4"/><rect x="880" y="374" width="230" height="4"/><rect x="880" y="452" width="230" height="4"/></g>
+      <rect x="1110" y="170" width="140" height="390" fill="#cfe0f2"/>
+      <rect x="1110" y="170" width="140" height="390" fill="url(#win2)"/>
+      <rect x="1110" y="170" width="140" height="390" fill="#163f6e" opacity=".3"/>
+    </g>
+    <g fill="#2f7d5b" opacity=".9">
+      <circle cx="850" cy="500" r="48"/><circle cx="800" cy="520" r="40"/><circle cx="905" cy="525" r="34"/>
+      <circle cx="1270" cy="510" r="44"/><circle cx="1330" cy="525" r="36"/>
+    </g>
+    <g fill="#3f9a71" opacity=".9"><circle cx="830" cy="480" r="30"/><circle cx="1290" cy="490" r="28"/></g>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="BRIコミュニティー トップページ">
+      <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="logo-text"><small>BRI GROUP</small><strong>BRIコミュニティー</strong></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く"><span></span></button>
+    <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+      <ul>
+        <li><a href="point.html">管理会社をお探しの方へ</a></li>
+        <li><a href="works.html">業務案内</a></li>
+        <li><a href="company.html">会社情報</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="faq.html">Q&amp;A</a></li>
+        <li><a href="jyucho.html">重要事項調査報告書</a></li>
+        <li class="nav-contact"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== メインビジュアル（クリックで各ページへ） ===== -->
+  <section class="hero" aria-roledescription="carousel" aria-label="BRIコミュニティーからのご案内">
+    <div class="hero-track">
+
+      <a class="slide slide-1 is-active" href="point.html" aria-roledescription="slide" aria-label="1 / 4：管理会社をお探しの方へ">
+        <div class="slide-bg has-photo" style="background-image:url('images/hotel-body-hotel-galicia-metroresidences-roppongi-1-a1504f19.png')" aria-hidden="true"></div>
+        <div class="slide-body container">
+          <span class="slide-label">管理会社をお探しの方へ</span>
+          <p class="slide-title">管理会社の変更、<br>まずはご相談ください。</p>
+          <p class="slide-text">見積りから総会での決議まで、最短約3〜4ヶ月。<br>変更に必要な書類の作成や理事会の調整は、私たちがサポートします。</p>
+          <span class="slide-more">変更の流れを見る</span>
+        </div>
+      </a>
+
+      <a class="slide slide-2" href="works.html" aria-roledescription="slide" aria-label="2 / 4：業務案内">
+        <div class="slide-bg" data-photo="images/slide2.jpg" aria-hidden="true"><svg><use href="#city"/></svg></div>
+        <div class="slide-body container">
+          <span class="slide-label">業務案内</span>
+          <p class="slide-title">マンション管理を、<br>もっと確実に、丁寧に。</p>
+          <p class="slide-text">管理組合の運営から、建物の維持管理、組合会計・出納まで。<br>「凡事徹底」の姿勢で、資産価値と快適な暮らしを守ります。</p>
+          <span class="slide-more">業務内容を見る</span>
+        </div>
+      </a>
+
+      <a class="slide slide-3" href="news.html" aria-roledescription="slide" aria-label="3 / 4：お知らせ">
+        <div class="slide-bg" data-photo="images/slide3.jpg" aria-hidden="true"><svg><use href="#city"/></svg></div>
+        <div class="slide-body container">
+          <span class="slide-label">お知らせ　2026.10</span>
+          <p class="slide-title">港区のマンション（28戸・52戸）の<br>管理を開始しました。</p>
+          <p class="slide-text">おかげさまで管理戸数は累計3,384戸に（2026年10月現在）。<br>最新の管理情報や休業日のご案内はお知らせ一覧をご覧ください。</p>
+          <span class="slide-more">お知らせ一覧へ</span>
+        </div>
+      </a>
+
+      <a class="slide slide-4" href="jyucho.html" aria-roledescription="slide" aria-label="4 / 4：不動産会社様へ">
+        <div class="slide-bg" data-photo="images/slide4.jpg" aria-hidden="true"><svg><use href="#city"/></svg></div>
+        <div class="slide-body container">
+          <span class="slide-label">不動産会社様へ</span>
+          <p class="slide-title">重要事項調査報告書は<br>Web受付で承ります。</p>
+          <p class="slide-text">当社管理マンションの調査報告書の発行は、Web受付のみとなりました。<br>ご依頼の承諾から3営業日後を目安に発行いたします。</p>
+          <span class="slide-more">依頼方法を見る</span>
+        </div>
+      </a>
+
+    </div>
+
+    <button class="hero-arrow hero-prev" type="button" aria-label="前のスライド">‹</button>
+    <button class="hero-arrow hero-next" type="button" aria-label="次のスライド">›</button>
+    <button class="hero-pause" type="button" aria-label="スライドを停止">Ⅱ 停止</button>
+
+    <div class="hero-controls">
+      <ul class="container hero-tabs" role="tablist" aria-label="スライドの切り替え">
+        <li><button type="button" role="tab" aria-selected="true"><span class="bar"><i></i></span><small>FOR OWNERS</small>管理会社をお探しの方へ</button></li>
+        <li><button type="button" role="tab" aria-selected="false"><span class="bar"><i></i></span><small>SERVICE</small>業務案内</button></li>
+        <li><button type="button" role="tab" aria-selected="false"><span class="bar"><i></i></span><small>NEWS</small>お知らせ</button></li>
+        <li><button type="button" role="tab" aria-selected="false"><span class="bar"><i></i></span><small>FOR AGENTS</small>不動産会社様へ</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== すぐ使う導線 ===== -->
+  <div class="quick-links">
+    <div class="container">
+      <a class="btn btn-primary" href="point.html">管理会社をお探しの方へ</a>
+      <a class="btn btn-outline" href="contact.html">お問い合わせ・ご相談</a>
+      <a class="btn btn-outline" href="company.html">会社情報</a>
+    </div>
+  </div>
+
+  <!-- ===== 業務案内 ===== -->
+  <section class="section" id="service">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">SERVICE</span>
+        <h2>業務案内</h2>
+        <p>マンション管理に必要な業務を、ワンストップでお任せいただけます。</p>
+      </div>
+      <div class="service-grid">
+        <a class="card" href="works.html#unei">
+          <div class="card-visual v1" data-photo="images/service1.jpg" aria-hidden="true"><svg><use href="#i-people"/></svg></div>
+          <div class="card-body">
+            <h3><span class="card-icon" aria-hidden="true"><svg><use href="#i-people"/></svg></span>管理組合運営</h3>
+            <p>総会・理事会の運営補助、議案書・議事録の作成、年間事業計画の作成など。</p>
+            <span class="card-link">詳しく見る</span>
+          </div>
+        </a>
+        <a class="card" href="works.html#iji">
+          <div class="card-visual v2" data-photo="images/service2.jpg" aria-hidden="true"><svg><use href="#i-building"/></svg></div>
+          <div class="card-body">
+            <h3><span class="card-icon" aria-hidden="true"><svg><use href="#i-building"/></svg></span>建物の維持管理</h3>
+            <p>日常清掃・定期点検・長期修繕計画の作成。夜間・休日のトラブルにも対応。</p>
+            <span class="card-link">詳しく見る</span>
+          </div>
+        </a>
+        <a class="card" href="works.html#kaikei">
+          <div class="card-visual v3" data-photo="images/service3.jpg" aria-hidden="true"><svg><use href="#i-calc"/></svg></div>
+          <div class="card-body">
+            <h3><span class="card-icon" aria-hidden="true"><svg><use href="#i-calc"/></svg></span>組合会計・出納</h3>
+            <p>決算報告書・予算案の作成、管理費等の出納、未収金の督促まで正確に。</p>
+            <span class="card-link">詳しく見る</span>
+          </div>
+        </a>
+        <a class="card" href="jyucho.html">
+          <div class="card-visual v4" data-photo="images/service4.jpg" aria-hidden="true"><svg><use href="#i-doc"/></svg></div>
+          <div class="card-body">
+            <h3><span class="card-icon" aria-hidden="true"><svg><use href="#i-doc"/></svg></span>重要事項調査報告書</h3>
+            <p>不動産会社様向け。当社管理マンションの調査報告書をWebで受け付けます。</p>
+            <span class="card-link">依頼方法を見る</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 特長 ===== -->
+  <section class="section section-alt feature-band" id="feature" data-photo="images/feature-bg.jpg">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">FEATURES</span>
+        <h2>BRIコミュニティーの特長</h2>
+        <p>当たり前のことを、徹底して続ける。「凡事徹底」が私たちの理念です。</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <svg class="feature-icon" aria-hidden="true"><use href="#i-group"/></svg>
+          <span class="feature-num">POINT 01</span>
+          <h3>グループ一体のサポート</h3>
+          <p>「開発・分譲」「賃貸」「建物管理」が一体となったグループ構成で、様々な側面からサポートします。</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <span class="feature-num">POINT 02</span>
+          <h3>都内中心だから迅速</h3>
+          <p>管理物件が東京都内に集中しているため、現地への対応がスピーディーです。</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" aria-hidden="true"><use href="#i-shield"/></svg>
+          <span class="feature-num">POINT 03</span>
+          <h3>緊急受付センターを常設</h3>
+          <p>警備会社との提携により、居住者のお困りごとや建物のトラブルに迅速に対応します。</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" aria-hidden="true"><use href="#i-chart"/></svg>
+          <span class="feature-num">POINT 04</span>
+          <h3>収支の改善をご提案</h3>
+          <p>電気料金の削減をはじめ、修繕積立金を多く残すための収支改善を積極的にご提案します。</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" aria-hidden="true"><use href="#i-key"/></svg>
+          <span class="feature-num">POINT 05</span>
+          <h3>ワンルーム管理に精通</h3>
+          <p>オーナー様が遠方にお住まいなど、ワンルーム特有の組合運営を的確にサポートします。</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" aria-hidden="true"><use href="#i-hand"/></svg>
+          <span class="feature-num">POINT 06</span>
+          <h3>大手協力会社と提携</h3>
+          <p>警備会社・大手建築会社・大手設備点検会社と提携し、緊急時や不具合にも丁寧に対応します。</p>
+        </div>
+      </div>
+      <p style="text-align:center;margin:40px 0 0"><a class="btn btn-outline" href="company.html#feature">会社情報・特長を詳しく見る</a></p>
+    </div>
+  </section>
+
+  <!-- ===== 実績 ===== -->
+  <section class="section" id="results">
+    <div class="container stats">
+      <div>
+        <div class="section-head" style="text-align:left;margin-bottom:24px">
+          <span class="en">RESULTS</span>
+          <h2>管理実績</h2>
+        </div>
+        <p class="stat-big">3,384<small>戸</small></p>
+        <p class="stat-note">管理戸数（累計）　2026年10月現在</p>
+        <div class="stat-list">
+          <div><b>2012年</b><span>設立</span></div>
+          <div><b>196戸</b><span>2026年の新規受託</span></div>
+          <div><b>東京都内</b><span>中心に管理</span></div>
+        </div>
+      </div>
+      <div class="chart" role="img" aria-label="管理戸数（累計）の推移。2012年41戸から2026年3,384戸まで毎年増加しています。">
+        <h3>管理戸数（累計）の推移</h3>
+        <div class="bars" aria-hidden="true">
+          <span style="height:1.2%"></span><span style="height:10.6%"></span><span style="height:22.1%"></span><span style="height:38%"></span><span style="height:42.1%"></span><span style="height:47.1%"></span><span style="height:52.6%"></span><span style="height:57.3%"></span><span style="height:62.5%"></span><span style="height:66%"></span><span style="height:71.7%"></span><span style="height:77.8%"></span><span style="height:86.4%"></span><span style="height:94.2%"></span><span style="height:100%"></span>
+        </div>
+        <div class="bars-x" aria-hidden="true"><span>2012</span><span>2016</span><span>2020</span><span>2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 詳しく知りたい方へ（導線） ===== -->
+  <section class="section section-alt" id="guide">
+    <div class="container">
+      <div class="section-head">
+        <span class="en">GUIDE</span>
+        <h2>詳しく知りたい方へ</h2>
+      </div>
+      <div class="guide-grid">
+        <a class="guide" href="point.html">
+          <div class="guide-head v1" data-photo="images/guide1.jpg"><span class="en">FLOW</span><h3>管理会社変更の流れ</h3></div>
+          <p>見積り依頼から総会決議までの手順をご紹介</p>
+        </a>
+        <a class="guide" href="company.html#results">
+          <div class="guide-head v2" data-photo="images/guide2.jpg"><span class="en">RESULTS</span><h3>実績</h3></div>
+          <p>多くの管理組合様から選ばれている実績</p>
+        </a>
+        <a class="guide" href="news.html">
+          <div class="guide-head v3" data-photo="images/guide3.jpg"><span class="en">NEWS</span><h3>お知らせ</h3></div>
+          <p>新規受託・休業日などの最新情報</p>
+        </a>
+        <a class="guide" href="faq.html">
+          <div class="guide-head v4" data-photo="images/guide4.jpg"><span class="en">Q&amp;A</span><h3>よくある質問</h3></div>
+          <p>管理費・修繕積立金・共用部などの疑問</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== お知らせ ===== -->
+  <section class="section" id="news">
+    <div class="container news-wrap">
+      <div>
+        <div class="section-head">
+          <span class="en">NEWS</span>
+          <h2>お知らせ</h2>
+        </div>
+        <p class="news-more"><a class="btn btn-outline" href="news.html">一覧を見る</a></p>
+      </div>
+      <ul class="news-list">
+        <li><a class="news-item" href="news.html#n202610"><span class="news-date">2026.10</span><span class="tag tag-kanri">管理情報</span><span class="news-title">港区のマンション（28戸・52戸）の管理を開始しました。</span></a></li>
+        <li><a class="news-item" href="news.html#n202608"><span class="news-date">2026.08</span><span class="tag tag-info">お知らせ</span><span class="news-title">夏季休暇のお知らせ（8月8日〜8月16日）</span></a></li>
+        <li><a class="news-item" href="news.html#n202607"><span class="news-date">2026.07</span><span class="tag tag-kanri">管理情報</span><span class="news-title">足立区のマンション（40戸）の管理を開始しました。</span></a></li>
+        <li><a class="news-item" href="news.html#n202606"><span class="news-date">2026.06</span><span class="tag tag-kanri">管理情報</span><span class="news-title">江東区・文京区のマンションの管理を開始しました。</span></a></li>
+        <li><a class="news-item" href="news.html#n202602"><span class="news-date">2026.02</span><span class="tag tag-info">お知らせ</span><span class="news-title">事務所移転のご案内（2026年3月9日より新事務所で営業）</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== お問い合わせ ===== -->
+  <section class="cta" id="contact">
+    <div class="container cta-inner">
+      <div>
+        <h2>マンション管理に関するご相談・<br>お問い合わせはこちら</h2>
+        <p>管理の見直しや管理会社の変更など、お気軽にご相談ください。</p>
+      </div>
+      <div class="cta-actions">
+        <a class="tel-box" href="tel:0357867660">
+          <svg aria-hidden="true"><use href="#i-tel"/></svg>
+          <span><small>お電話でのお問い合わせ（平日 10:00〜18:00）</small><b>03-5786-7660</b></span>
+        </a>
+        <a class="btn btn-white" href="contact.html">メールフォームでお問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="logo-text"><small>BRI GROUP</small><strong>BRIコミュニティー</strong></span>
+        </a>
+        <address class="footer-address">
+          〒106-0032<br>東京都港区六本木7-15-9<br>住友不動産六本木セントラルタワー12階<br>
+          TEL：<a href="tel:0357867660" style="color:inherit">03-5786-7660</a>（平日 10:00〜18:00）<br>
+          緊急受付センター（24時間）：<a href="tel:05020185985" style="color:inherit">050-2018-5985</a><br>
+          マンション管理業 国土交通大臣（3）033911号<br>宅地建物取引業 東京都知事（3）96363号
+        </address>
+      </div>
+      <nav class="footer-nav" aria-label="フッターメニュー">
+        <div>
+          <h4>業務案内</h4>
+          <ul>
+            <li><a href="works.html#unei">管理組合運営</a></li>
+            <li><a href="works.html#iji">建物の維持管理</a></li>
+            <li><a href="works.html#kaikei">組合会計・出納</a></li>
+            <li><a href="jyucho.html">重要事項調査報告書</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>会社情報</h4>
+          <ul>
+            <li><a href="company.html#philosophy">企業理念</a></li>
+            <li><a href="company.html#feature">特長</a></li>
+            <li><a href="company.html#profile">会社概要</a></li>
+            <li><a href="company.html#results">実績（管理戸数）</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>ご案内</h4>
+          <ul>
+            <li><a href="point.html">管理会社をお探しの方へ</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="faq.html">Q&amp;A</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="privacy.html">個人情報保護方針</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>グループ会社：<a href="http://www.b-r-i.co.jp/" target="_blank" rel="noopener">株式会社BRI</a>　<a href="http://www.brisupport.co.jp/" target="_blank" rel="noopener">株式会社BRIサポート</a></span>
+      <small>&copy; BRI COMMUNITY Inc. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<a class="to-top" href="#main" aria-label="ページの先頭へ">↑</a>
+<div class="sp-fixed">
+  <a class="tel" href="tel:0357867660"><svg aria-hidden="true"><use href="#i-tel"/></svg>電話する</a>
+  <a class="mail" href="contact.html"><svg aria-hidden="true"><use href="#i-mail"/></svg>お問い合わせ</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
