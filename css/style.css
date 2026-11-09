@@ -524,6 +524,18 @@ a.news-item:hover { background: var(--sky); color: var(--ink); }
 .slide-1::before { background: linear-gradient(90deg, rgba(255,255,255,.6) 0%, rgba(255,255,255,.35) 45%, rgba(255,255,255,0) 60%); }
 .slide-1 .slide-title { font-size: clamp(28px, 3.3vw, 46px); }
 .slide-1 .slide-text { max-width: 25em; }
+/* 横に広い画面（1441px以上）だけ：写真を少し中央に寄せ、右端もぼかして背景になじませる
+   → 見え方（文字の後ろで写真がなじむ形）は変えずに、左だけ空く状態をなくす */
+@media (min-width: 1441px) {
+  .slide-1 .slide-bg {
+    right: calc((100% - 1440px) / 2 * 1.4);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 88%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 88%, transparent 100%);
+  }
+}
+@media (min-width: 1600px) {
+  :root { --container: 1280px; }
+}
 @media (max-width: 640px) {
   .hero-track { height: 620px; }
   .slide-1 .slide-bg {
